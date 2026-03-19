@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { Dashboard } from './Dashboard';
 import { TaskManagement } from './TaskManagement';
 import { AuthForm } from './AuthForm';
@@ -247,6 +248,7 @@ const App = () => {
           />
         )}
       </div>
+      <Analytics />
     </div>
   );
 };
